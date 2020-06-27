@@ -50,7 +50,7 @@ def get_movies(url):
             print('parse content except::%s', movies_info)
             return
         pf = pd.DataFrame(movies_info)
-        pf.to_csv('./movie1.csv', encoding='utf8', index=False, header=False)
+        pf.to_csv('./movie.csv', encoding='utf8', index=False, header=False)
     except Exception as e:
         print('get movies except:%s', format_exc())
 
