@@ -17,3 +17,5 @@ browser.find_element_by_xpath('//*[@id="root"]/div/div[2]/div/div/div/div[2]/div
     .send_keys(password)
 time.sleep(1)
 browser.find_element_by_xpath('//*[@id="root"]/div/div[2]/div/div/div/div[2]/div/div/div[1]/button').click()
+time.sleep(10)
+browser.close()
