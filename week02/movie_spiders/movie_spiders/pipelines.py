@@ -50,7 +50,7 @@ class MovieSpidersPipeline:
             )
             cur = self.conn.cursor()
             try:
-                cur.execute(sql, [item['my_movie_name'], item['my_movie_type'], item['my_movie_release_tm']])
+                cur.execute(sql, item_dict.values())
             except:
                 self.conn.rollback()
                 print('save to db failed except:%s', format_exc())
