@@ -110,3 +110,9 @@ ITEM_PIPELINES = {
 #HTTPCACHE_DIR = 'httpcache'
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
+
+DB_HOST = '10.0.10.26'
+DB_USER = 'risk_test'
+DB_PWD = 'risk@risk'
+DB = 'gaoxiaoyu'
+TABLE = 'maoyan_movie'
