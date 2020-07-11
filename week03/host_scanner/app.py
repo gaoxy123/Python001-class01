@@ -40,7 +40,7 @@ class HostScanner(object):
         end = int(time.time())
 
         if self.cost_print:
-            print('cost time:%s', end-begin)
+            print('cost time:%s' % (end-begin))
         # print('result:', result)
 
         if self.file_name:

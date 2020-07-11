@@ -28,7 +28,7 @@ def check_port(ip, port):
 
 def check_ping(ip):
     result = os.popen('ping -c 1 -t 2 %s' % ip).read()
-    if 'packet loss' in result:
-        return False
-    print('can ping:%s' % ip)
-    return True
+    if 'ttl' in result:
+        print('can ping:%s' % ip)
+        return True
+    return False
