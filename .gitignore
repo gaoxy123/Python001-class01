@@ -19,4 +19,4 @@ image/*
 .DS_Store
 *.pdf
 !.gitkeep
-!douban/static/images/*
+!week06/MovieDjango/douban/static/images/*
