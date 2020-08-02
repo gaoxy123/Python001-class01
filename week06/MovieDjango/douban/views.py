@@ -26,3 +26,8 @@ def douban_movie_show(request):
 
     # return render(request, 'douban.html', locals())
     return render(request, 'result.html', locals())
+
+
+
+def huozhe_movie_show(request):
+
