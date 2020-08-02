@@ -17,6 +17,6 @@ image/*
 *.pid
 .idea/
 .DS_Store
-*.html
 *.pdf
 !.gitkeep
+!douban/static/images/*
