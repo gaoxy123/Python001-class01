@@ -20,4 +20,12 @@ class T1(models.Model):
 
 
 
-class DoubBanMovie()
+class DoubBanMovie(models.Model):
+    id = models.BigAutoField(primary_key=True)
+    movie_name = models.CharField(max_length=100)
+    n_star = models.IntegerField()
+    short = models.CharField(max_length=400)
+
+    class Meta:
+        managed = False
+        db_table = 'douban_movie'
