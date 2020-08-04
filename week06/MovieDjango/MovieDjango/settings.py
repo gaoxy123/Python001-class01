@@ -47,8 +47,6 @@ INSTALLED_APPS = [
     'index',
     ### 豆瓣
     'douban',
-    ### 猫眼电影
-    'maoyan',
 ]
 
 MIDDLEWARE = [

@@ -20,5 +20,4 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('index.urls')),
     path('douban/', include('douban.urls')),
-    path('maoyan/', include('maoyan.urls')),
 ]

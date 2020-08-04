@@ -4,7 +4,7 @@ from django.http import HttpResponseNotFound
 from traceback import format_exc
 import json
 
-from .models import T1, DoubBanMovie
+from .models import T1, DouBanMovie
 
 # Create your views here.
 
@@ -34,7 +34,7 @@ def douban_movie_show(request):
 
 def huozhe_movie_show(request):
     try:
-        movie_shorts = DoubBanMovie.objects.filter(movie_name='活着', n_star__gt=3)
+        movie_shorts = DouBanMovie.objects.filter(movie_name='活着', n_star__gt=3)
         return render(request, 'douban_movie.html', locals())
     except:
         return HttpResponseNotFound(f"<h1>发生未知异常{format_exc()}</h1>")
