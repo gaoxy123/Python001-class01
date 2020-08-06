@@ -56,7 +56,6 @@ class Animals(metaclass=ABCMeta):
         return False
 
 
-
 class Cat(Animals):
     voice = '喵~~~'
 
@@ -80,4 +79,4 @@ if __name__ == '__main__':
     # 动物园是否有猫这种动物
     have_cat = getattr(z, 'Cat')
     print(f'zoo has cat? {bool(have_cat)}.')
-    c = Animals('','','')
+    c = Animals('', '', '')
